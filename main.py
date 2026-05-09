@@ -11,6 +11,6 @@ heure_alarme = int(input(" A quelle heure veux-tu te réveiller ? "))
 min_alarme = int(input("Quelles minutes ? "))
 
 while True :
-    if heure_alarme==datetime.now().hour and min_alarme==datetime.now().minutes:
+    if heure_alarme==datetime.datetime.now().hour and min_alarme==datetime.datetime.now().minutes:
         print("Réveille toi !")
 
