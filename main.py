@@ -1,13 +1,16 @@
-#print("Hello World") Ici je reteste quelques exercices effectuées en classe pendant ma premiere année de licence de mathématiques #
+#print("Hello World") Voici quelques projets débutants que j'ai essayé de faire :
 
-#Trouver les nombres pairs d'une liste de nombre:#
+#https://liora.io/10-projets-python-pour-debutants 
 
-import math
-nombres = range(51)
-nombres_pairs = []
+#1. Une alarme réveil
+#Le reveil doit être à 10h pour afficher un message .#
 
-for i in nombres:
-    if i % 2 == 0:
-        nombres_pairs.append(i)
+import datetime
 
-print (nombres_pairs)
+heure_alarme = int(input(" A quelle heure veux-tu te réveiller ? "))
+min_alarme = int(input("Quelles minutes ? "))
+
+while True :
+    if heure_alarme==datetime.now().hour and min_alarme==datetime.now().minutes:
+        print("Réveille toi !")
+
